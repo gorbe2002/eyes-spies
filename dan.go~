@@ -1,0 +1,30 @@
+package main
+
+import (
+    "fmt"
+    "bufio"
+    "os"
+	"image/gif"
+	"github.com/qeesung/asciiplayer"
+	"github.com/qeesung/image2ascii/convert"
+)
+
+func main() {
+    inputFile , err := os.Open("vid/munch.gif")
+    defer inputFile.Close()
+    if err != nil {
+        panic(err)
+    }
+
+    r := bufio.NewReader(inputFile)
+
+    g, err := gif.DecodeAll(r)
+    if err != nil {
+        panic(err)
+    }
+
+    converter := convert.NewImageConverter()
+    asciiCanvas := converter.Image2ASCIIArt(g.Image[0], nil)
+    player := asciiplayer.NewASCIIPlayer()
+    player.Play(asciiCanvas.Frames(), 100)
+}
