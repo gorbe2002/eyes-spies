@@ -1,5 +1,5 @@
 import openai
-openai.api_key = "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"
+openai.api_key = ""
 
 # Ice Spice Verse Generator:
 song1 = ("""

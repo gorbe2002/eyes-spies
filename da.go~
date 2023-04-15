@@ -1,0 +1,18 @@
+package main
+
+import (
+	"fmt"
+	"image/gif"
+	"os"
+	"time"
+
+	"github.com/qeesung/asciiplayer/pkg/player"
+	"github.com/qeesung/image2ascii/ascii"
+	"github.com/qeesung/image2ascii/convert"
+)
+
+func main() {
+	playa := player.NewGifTerminalPlayer()
+
+	playa.Play("vid/munch.gif", player.DefaultPlayOptions)
+}
