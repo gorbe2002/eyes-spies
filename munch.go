@@ -7,6 +7,7 @@ import (
 	"os"
 
 	"github.com/urfave/cli"
+	_ "github.com/AOrps/eyes-spies/dance"
 )
 
 func main() {
@@ -37,10 +38,18 @@ func main() {
 				return nil
 			},
 		},
+		{
+			Name:  "dance",
+			Usage: "Watch Ice Spice Dance",
+			Flags: myFlags,
+			Action: GenDisplayDefault("vid/munch.gif"),			},
+		},
+		
 	}
 
 	err := app.Run(os.Args)
 	if err != nil {
 		log.Fatal(err)
 	}
+	
 }

@@ -1,39 +1,13 @@
-package main
+package dance
 
 import (
-    "image/gif"
-    "os"
-    "time"
+	"github.com/qeesung/asciiplayer/pkg/player"
 
-    "github.com/qeesung/asciiplayer"
-    "github.com/qeesung/asciiplayer/asciiart"
-)
 
-func main() {
-    // Load the GIF file
-    file, err := os.Open("input.gif")
-    if err != nil {
-        panic(err)
-    }
-    defer file.Close()
+	
+// GenDisplayDefault: generates the display from the string of the gif location
+func GenDisplayDefault(filename string) err {
 
-    // Decode the GIF file
-    gifImg, err := gif.DecodeAll(file)
-    if err != nil {
-        panic(err)
-    }
+	def_opts := &player.DefaultPlayOptions
 
-    // Convert each frame to ASCII art and create a slide for each frame
-    var slides []asciiplayer.Slide
-    for _, frame := range gifImg.Image {
-        ascii, err := asciiart.Convert(frame, 100, 40, asciiart.NewCharacterSet("█▓░ ."))
-        if err != nil {
-            panic(err)
-        }
-        slides = append(slides, asciiplayer.Slide{Content: ascii, Delay: time.Duration(gifImg.Delay[0]) * time.Millisecond})
-    }
-
-    // Play the ASCII art animation
-    player := asciiplayer.NewPlayer()
-    player.Play(slides)
 }
