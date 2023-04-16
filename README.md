@@ -9,23 +9,52 @@ Monitoring tool but with Ice Spice :P
 In this command line hack, we created multiple CLI tools, which can range from showing you the weather forecast, to creating an ascii art video.
 
 ## :open_book: Commands
+Help:
+- Shows a list of commands or help for one command
+```sh
+./munch.o help
+```
+
 Weather:
+- Shows the weather of where you are
 ```sh
 ./munch.o wttr
 ```
 
 Dance:
+- Watch Ice Spice dance
 ```sh
 ./munch.o dance
 ```
+
 Logo:
+- Display our logo in ascii art
 ```sh
 ./munch.o logo
 ```
 
 Text:
+- Sends a text message from a Miami number
 ```sh
 ./munch.o text
+```
+
+Name Servers:
+- Show current name servers
+```sh
+./munch.o ns
+```
+
+IP:
+- Shows IP address
+```sh
+./munch.o ip
+```
+
+Operating System:
+- Checks Operating System & Architecture
+```sh
+./munch.o os
 ```
 
 ## :microscope: Technologies
