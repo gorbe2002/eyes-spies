@@ -19,43 +19,37 @@ type Nav struct {
 	Name string
 }
 
-// handler: basic handler for the web server
-func handler(w http.ResponseWriter, r *http.Request) {
-	t, _ := template.ParseFiles("website.html")
-	t.Execute(w, nil)
-}
-
 // homepage: tools page of the website
 func homepage(w http.ResponseWriter, r *http.Request) {
+	t := template.Must(template.ParseGlob("*.html"))
 	homepageNav := []Nav{
 		{Href: "/", Name: "Homepage"},
 		{Href: "/tools", Name: "Tools"},
 		{Href: "/why", Name: "Why"},
 	}
-	t, _ := template.ParseFiles("homepage.html")
-	t.Execute(w, homepageNav)
+	t.ExecuteTemplate(w, "homepage", homepageNav)
 }
 
 // tools: tools page of the website
 func tools(w http.ResponseWriter, r *http.Request) {
+	t := template.Must(template.ParseGlob("*.html"))	
 	toolsNav := []Nav{
 		{Href: "/", Name: "Homepage"},
 		{Href: "/tools", Name: "Tools"},
 		{Href: "/why", Name: "Why"},
 	}
-	t, _ := template.ParseFiles("tools.html")
-	t.Execute(w, toolsNav)
+	t.ExecuteTemplate(w, "tools", toolsNav)
 }
 
 // why: why page of the website
 func why(w http.ResponseWriter, r *http.Request) {
+	t := template.Must(template.ParseGlob("*.html"))
 	whyNav := []Nav{
 		{Href: "/", Name: "Homepage"},
 		{Href: "/tools", Name: "Tools"},
 		{Href: "/why", Name: "Why"},
 	}
-	t, _ := template.ParseFiles("why.html")
-	t.Execute(w, whyNav)
+	t.ExecuteTemplate(w,"why", whyNav)
 }
 
 func main() {
@@ -70,7 +64,7 @@ func main() {
 
 	http.Handle("/assets/", http.StripPrefix("/assets", fs))
 
-	http.HandleFunc("/", handler)
+	http.HandleFunc("/", homepage)
 	http.HandleFunc("/homepage", homepage)
 	http.HandleFunc("/tools", tools)
 	http.HandleFunc("/why", why)
