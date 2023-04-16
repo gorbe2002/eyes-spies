@@ -8,7 +8,7 @@ Monitoring tool but with Ice Spice :P
 - [:memo: Description](https://github.com/gorbe2002/eyes-spies#memo-description)
 - [:open_book: Commands](https://github.com/gorbe2002/eyes-spies#open_book-commands)
 - [:microscope: Technologies](https://github.com/gorbe2002/eyes-spies#microscope-technologies)
-- [In-Depth](https://github.com/gorbe2002/eyes-spies#in-depth)
+- [:magnifying_glass_tilted_left: In-Depth](https://github.com/gorbe2002/eyes-spies#magnifying_glass_tilted_left-in-depth)
 
 ## :thought_balloon: Introduction to CLI and CLI tools
 - CLI stands for Command Line Interface, which is a way of interacting with a computer program or operating system using text commands typed into a terminal or command prompt. A CLI allows users to execute commands, navigate directories, and perform various tasks using keyboard input, instead of using a graphical user interface (GUI) that relies on mouse clicks and icons.
@@ -68,24 +68,25 @@ Operating System:
 
 ## :microscope: Technologies
 - Language(s): `go`, `html`, `css`, `python`, `rust`
-- Technologies: `nginx`
+- Technologies: `nginx`, `GCP`
 
-### In-Depth
+### :magnifying_glass_tilted_left: In-Depth
 <!-- Twilio -->
 <details>
 	<summary>Twilio</summary>
 
 - Send SMS
 
-- Send SMS with Multimedia
 </details>
 
 <!-- Domain.com -->
 <details>
 	<summary>Domain.com</summary>
-<!-- - Our dope domain: __. Check it out! -->
 
-- Custom Nameservers to DigitalOcean
+- Custom Nameservers to Google Cloud Platform
+
+- Our dope domains: http://espies.tech/ and http://35.209.202.192/. Check them out!
+
 </details>
 
 <!-- Github -->
@@ -99,4 +100,32 @@ Operating System:
 - Github Code (Source Code)
 
 - Github CODEOWNERS
+</details>
+
+<!-- GCP -->
+<details>
+    <summary>Google Cloud Platform</summary>
+
+- Compute Engine
+
+    - VM Instances
+
+- Network Services
+
+    - Cloud DNS
+
+- IAM & Admin
+
+    - IAM
+
+    - Identity & Organization
+
+    - Service Accounts
+
+- VCP Network
+
+    - IP Addresses
+
+    - Shared VPC
+
 </details>
