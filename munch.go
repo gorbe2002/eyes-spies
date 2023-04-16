@@ -42,9 +42,11 @@ func main() {
 			Name:  "dance",
 			Usage: "Watch Ice Spice Dance",
 			Flags: myFlags,
-			Action: GenDisplayDefault("vid/munch.gif"),			},
-		},
-		
+			Action: func(c *cli.Context) error {
+				GenDisplayDefault("vid/munch.gif")
+				return nil
+			},
+		},	
 	}
 
 	err := app.Run(os.Args)
