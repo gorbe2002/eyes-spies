@@ -3,13 +3,14 @@ package main
 import (
 	"fmt"
 	"log"
-	"net"
 	"os"
 	"runtime"
 
 	"github.com/urfave/cli"
 	"github.com/gorbe2002/eyes-spies/dance"
-	"github.com/gorbe2002/eyes-spies/wttr"	
+	"github.com/gorbe2002/eyes-spies/wttr"
+	"github.com/gorbe2002/eyes-spies/networking"
+	logod "github.com/gorbe2002/eyes-spies/logoDisplay"	
 	// "github.com/gorbe2002/eyes-spies/txt"
 )
 
@@ -20,27 +21,30 @@ func main() {
 
 	myFlags := []cli.Flag{
 		cli.StringFlag{
-			Name:  "gorbe2002/eyes-spies",
-			Value: "Ultimate CLI tool",
+			Name:  "host",
+			Value: "google.com",
 		},
 	}
 
 	app.Commands = []cli.Command{
 		{
 			Name:  "ns",
-			Usage: "tutorialedge.net",
+			Usage: "Show current Nameservers",
 			Flags: myFlags,
 			Action: func(c *cli.Context) error {
-				ns, err := net.LookupNS(c.String("host"))
-				if err != nil {
-					return err
-				}
-				for i := 0; i < len(ns); i++ {
-					fmt.Println(ns[i].Host)
-				}
+				networking.ShowNS(c.String("host"))
 				return nil
 			},
 		},
+		{
+			Name:  "ip",
+			Usage: "Show IP Address",
+			Flags: myFlags,
+			Action: func(c *cli.Context) error {
+				networking.ShowIP(c.String("host"))
+				return nil
+			},
+		},		
 		{
 			Name:  "dance",
 			Usage: "Watch Ice Spice Dance",
@@ -67,6 +71,15 @@ func main() {
 			Flags: myFlags,
 			Action: func(c *cli.Context) error {
 				wttr.ShowWTTR()
+				return nil
+			},
+		},	
+		{
+			Name:  "logo",
+			Usage: "Display our logo in ascii art",
+			Flags: myFlags,
+			Action: func(c *cli.Context) error {
+				logod.ShowLogo("logos/roughLogo.png")
 				return nil
 			},
 		},	

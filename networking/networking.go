@@ -1,14 +1,38 @@
-package main
+package networking
 
 import (
 	"fmt"
-	"log"
 	"net"
-	"os"
 
-	"github.com/urfave/cli"
+	// "github.com/urfave/cli"
 )
 
+func ShowNS(host string) error {
+	ns, err := net.LookupNS(host)
+	fmt.Println("Nameservers connecting to:")
+	fmt.Println("====================================")
+	if err != nil {
+		return err
+	}
+	for i := 0; i < len(ns); i++ {
+		fmt.Println(ns[i].Host)
+	}
+	return nil
+}
+
+func ShowIP(host string) error {
+	ip, err := net.LookupIP(host)
+	if err != nil {
+		return err
+	}
+	for i := 0; i < len(ip); i++ {
+		fmt.Println(ip[i])
+	}
+	return nil
+}
+
+
+/*
 func main() {
 	app := cli.NewApp()
 	app.Name = "The Munch Net"
@@ -90,3 +114,4 @@ func main() {
 		log.Fatal(err)
 	}
 }
+*/
