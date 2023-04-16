@@ -16,5 +16,6 @@ func GenDisplayDefault(filename string) err {
 	// plays on a loop
 	// https://github.com/qeesung/asciiplayer/blob/master/pkg/player/gif_player.go#L26-L46
 	playa.Play(filename, def_opts)
-	
+
+	return nil
 }
