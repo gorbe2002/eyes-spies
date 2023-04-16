@@ -9,6 +9,8 @@ Monitoring tool but with Ice Spice :P
 - [:open_book: Commands](https://github.com/gorbe2002/eyes-spies#open_book-commands)
 - [:microscope: Technologies](https://github.com/gorbe2002/eyes-spies#microscope-technologies)
 - [:mag: In-Depth](https://github.com/gorbe2002/eyes-spies#magnifying_glass_tilted_left-in-depth)
+- [:blue_book: Technical Details](https://github.com/gorbe2002/eyes-spies#blue_book-technical-details)
+- [:books: Resources](https://github.com/gorbe2002/eyes-spies#book-resources)
 
 ## :thought_balloon: Introduction to CLI and CLI tools
 - CLI stands for Command Line Interface, which is a way of interacting with a computer program or operating system using text commands typed into a terminal or command prompt. A CLI allows users to execute commands, navigate directories, and perform various tasks using keyboard input, instead of using a graphical user interface (GUI) that relies on mouse clicks and icons.
@@ -103,3 +105,12 @@ In this command line hack, we created multiple CLI tools, which can range from s
     - Shared VPC
 
 </details>
+
+## :blue_book: Technical Details
+- Need a `.env` file in `/root` with the following fields:
+```txt
+# Enter values where `<>` is
+M_PHONE="<>"
+TWILIO_ACCOUNT_SID="<>"
+TWILIO_AUTH_TOKEN="<>"
+```
