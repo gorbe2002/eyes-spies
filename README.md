@@ -65,7 +65,7 @@ In this project, we created multiple CLI tools, which can range from showing you
 
 - Custom Nameservers to Google Cloud Platform
 
-- Our dope domains: http://espies.tech/ and http://35.209.202.192/. Check them out!
+- Our dope domain: http://espies.tech/. Check it out!
 
 </details>
 
