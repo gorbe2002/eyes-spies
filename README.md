@@ -29,7 +29,7 @@ In this project, we created multiple CLI tools, which can range from showing you
 - [Operating System](https://github.com/gorbe2002/eyes-spies/wiki)
 
 ## :microscope: Technologies
-- Language(s): `go`, `html`, `css`, `python`, `rust`
+- Language(s): `go`, `html`, `css`, `python`
 - Technologies: `nginx`, `GCP`
 
 ### :mag: In-Depth
