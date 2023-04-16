@@ -8,7 +8,7 @@ Monitoring tool but with Ice Spice :P
 - [:memo: Description](https://github.com/gorbe2002/eyes-spies#memo-description)
 - [:open_book: Commands](https://github.com/gorbe2002/eyes-spies#open_book-commands)
 - [:microscope: Technologies](https://github.com/gorbe2002/eyes-spies#microscope-technologies)
-- [:mag: In-Depth](https://github.com/gorbe2002/eyes-spies#magnifying_glass_tilted_left-in-depth)
+- [:mag: In-Depth](https://github.com/gorbe2002/eyes-spies#mag-in-depth)
 - [:blue_book: Technical Details](https://github.com/gorbe2002/eyes-spies#blue_book-technical-details)
 
 ## :thought_balloon: Introduction to CLI and CLI tools
