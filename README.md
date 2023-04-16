@@ -10,7 +10,6 @@ Monitoring tool but with Ice Spice :P
 - [:microscope: Technologies](https://github.com/gorbe2002/eyes-spies#microscope-technologies)
 - [:mag: In-Depth](https://github.com/gorbe2002/eyes-spies#magnifying_glass_tilted_left-in-depth)
 - [:blue_book: Technical Details](https://github.com/gorbe2002/eyes-spies#blue_book-technical-details)
-- [:books: Resources](https://github.com/gorbe2002/eyes-spies#book-resources)
 
 ## :thought_balloon: Introduction to CLI and CLI tools
 - CLI stands for Command Line Interface, which is a way of interacting with a computer program or operating system using text commands typed into a terminal or command prompt. A CLI allows users to execute commands, navigate directories, and perform various tasks using keyboard input, instead of using a graphical user interface (GUI) that relies on mouse clicks and icons.
