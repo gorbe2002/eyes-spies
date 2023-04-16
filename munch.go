@@ -5,9 +5,11 @@ import (
 	"log"
 	"net"
 	"os"
+	"runtime"
 
 	"github.com/urfave/cli"
-	_ "github.com/gorbe2002/eyes-spies/dance"
+	"github.com/gorbe2002/eyes-spies/dance"
+	// "github.com/gorbe2002/eyes-spies/txt"
 )
 
 func main() {
@@ -43,10 +45,22 @@ func main() {
 			Usage: "Watch Ice Spice Dance",
 			Flags: myFlags,
 			Action: func(c *cli.Context) error {
-				GenDisplayDefault("vid/munch.gif")
+				dance.GenDisplayDefault("vid/munch.gif")
+				return nil
+			},
+		},
+		{
+			Name:  "os",
+			Usage: "Check Operating System & Architecture",
+			Flags: myFlags,
+			Action: func(c *cli.Context) error {
+				os := runtime.GOOS
+				arch := runtime.GOARCH
+				fmt.Printf("\tOS : {  %s  }\tARCH: {  %s  }\n", os, arch)
 				return nil
 			},
 		},	
+		
 	}
 
 	err := app.Run(os.Args)
