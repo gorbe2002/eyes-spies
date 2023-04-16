@@ -1,15 +1,15 @@
 SHELL=/bin/bash
-
+OUT= munch.o
 all: compile
 
 compile: clean
-	@go build -o munch munch.go
+	@go build -o $(OUT) munch.go
 
 run: compile
-	@./munch
+	@./$(OUT)
 
 clean:
-ifneq (,$(wildcard ./munch))
-	@rm ./munch
+ifneq (,$(wildcard ./$(OUT)))
+	@rm ./$(OUT)
 endif
 
