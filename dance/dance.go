@@ -10,7 +10,7 @@ func GenDisplayDefault(filename string) {
 	// create a new gif terminal player
 	playa := player.NewGifTerminalPlayer()
 
-	// ensures that 
+	// ensures that there is some default option set
 	def_opts := &player.DefaultPlayOptions
 
 	// plays on a loop
