@@ -16,7 +16,7 @@ Monitoring tool but with Ice Spice :P
 - CLI tools are software programs that are designed to be used from the command line. They are usually lightweight and faster than their GUI counterparts, making them popular among developers and system administrators. CLI tools can be used to perform a wide range of tasks, such as text processing, file manipulation, system monitoring, network diagnostics, and more.
 
 ## :memo: Description
-In this command line hack, we created multiple CLI tools, which can range from showing you the weather forecast, to creating an ascii art video.
+In this project, we created multiple CLI tools, which can range from showing you the weather forecast, to creating an ascii art video. Now you might wonder where Ice Spice fits into all of this. It's simple, she inpired the idea to create the munch CLI tool.
 
 ## :open_book: Commands
 - [Help](https://github.com/gorbe2002/eyes-spies/wiki)
@@ -67,13 +67,13 @@ In this command line hack, we created multiple CLI tools, which can range from s
 
 - Our dope domains: http://espies.tech/ and http://35.209.202.192/. Check them out!
 
+</details>
+
 <!-- Twilio -->
 <details>
 	<summary>Twilio</summary>
 
 - Send SMS
-
-</details>
 
 </details>
 
