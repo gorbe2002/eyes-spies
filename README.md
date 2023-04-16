@@ -1,4 +1,4 @@
-# eyes-spies
+# eyes-spies ![Mozilla Add-on](https://img.shields.io/amo/stars/dustman)
 Monitoring tool but with Ice Spice :P
 
 ## :clipboard: Table of Contents
