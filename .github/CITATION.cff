@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it using these metadata.
+title: eyes-spies
+version: 0.4.1
+authors:
+  - name: @gorbe2002 
+    affiliation: HUMAN,NJIT
+  - name: @AOrps
+    affiliation: ---
+description: CLI Tool but
+license: BSD-2-Clause license
+repository-code: https://github.com/gorbe2002/eyes-spies.git
