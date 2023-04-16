@@ -33,24 +33,6 @@ In this command line hack, we created multiple CLI tools, which can range from s
 - Technologies: `nginx`, `GCP`
 
 ### :mag: In-Depth
-<!-- Twilio -->
-<details>
-	<summary>Twilio</summary>
-
-- Send SMS
-
-</details>
-
-<!-- Domain.com -->
-<details>
-	<summary>Domain.com</summary>
-
-- Custom Nameservers to Google Cloud Platform
-
-- Our dope domains: http://espies.tech/ and http://35.209.202.192/. Check them out!
-
-</details>
-
 <!-- Github -->
 <details>
 	<summary>Github</summary>
@@ -74,6 +56,24 @@ In this command line hack, we created multiple CLI tools, which can range from s
 - SECURITY Policy
 
 - Code of Conduct
+
+</details>
+
+<!-- Domain.com -->
+<details>
+	<summary>Domain.com</summary>
+
+- Custom Nameservers to Google Cloud Platform
+
+- Our dope domains: http://espies.tech/ and http://35.209.202.192/. Check them out!
+
+<!-- Twilio -->
+<details>
+	<summary>Twilio</summary>
+
+- Send SMS
+
+</details>
 
 </details>
 
