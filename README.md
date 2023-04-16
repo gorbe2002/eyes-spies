@@ -19,14 +19,14 @@ Monitoring tool but with Ice Spice :P
 In this project, we created multiple CLI tools, which can range from showing you the weather forecast, to creating an ascii art video. Now you might wonder where Ice Spice fits into all of this. It's simple, she inpired the idea to create the munch CLI tool.
 
 ## :open_book: Commands
-- [Help](https://github.com/gorbe2002/eyes-spies/wiki)
-- [Weather](https://github.com/gorbe2002/eyes-spies/wiki)
-- [Dance](https://github.com/gorbe2002/eyes-spies/wiki)
-- [Logo](https://github.com/gorbe2002/eyes-spies/wiki)
-- [Text](https://github.com/gorbe2002/eyes-spies/wiki)
-- [Name Servers](https://github.com/gorbe2002/eyes-spies/wiki)
-- [IP](https://github.com/gorbe2002/eyes-spies/wiki)
-- [Operating System](https://github.com/gorbe2002/eyes-spies/wiki)
+- [Help](https://github.com/gorbe2002/eyes-spies/wiki#help)
+- [Weather](https://github.com/gorbe2002/eyes-spies/wiki#weather)
+- [Dance](https://github.com/gorbe2002/eyes-spies/wiki#dance)
+- [Logo](https://github.com/gorbe2002/eyes-spies/wiki#logo)
+- [Text](https://github.com/gorbe2002/eyes-spies/wiki#text)
+- [Name Servers](https://github.com/gorbe2002/eyes-spies/wiki#name-servers)
+- [IP](https://github.com/gorbe2002/eyes-spies/wiki#ip)
+- [Operating System](https://github.com/gorbe2002/eyes-spies/wiki#operating-system)
 
 ## :microscope: Technologies
 - Language(s): `go`, `html`, `css`, `python`
