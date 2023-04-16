@@ -31,6 +31,11 @@ func ShowIP(host string) error {
 	return nil
 }
 
+func ShowSub(host string) error {
+
+	return nil
+}
+
 
 /*
 func main() {

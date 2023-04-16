@@ -6,13 +6,23 @@ import (
 	"os"
 	"runtime"
 
+	"github.com/joho/godotenv"
 	"github.com/urfave/cli"
 	"github.com/gorbe2002/eyes-spies/dance"
 	"github.com/gorbe2002/eyes-spies/wttr"
 	"github.com/gorbe2002/eyes-spies/networking"
+	"github.com/gorbe2002/eyes-spies/txt"	
 	logod "github.com/gorbe2002/eyes-spies/logoDisplay"	
 	// "github.com/gorbe2002/eyes-spies/txt"
 )
+
+func init() {
+	err := godotenv.Load()
+
+	if err != nil {
+		log.Fatal("err: no .env file found")
+	}
+}
 
 func main() {
 	app := cli.NewApp()
@@ -80,6 +90,26 @@ func main() {
 			Flags: myFlags,
 			Action: func(c *cli.Context) error {
 				logod.ShowLogo("logos/roughLogo.png")
+				return nil
+			},
+		},	
+		{
+			Name:  "text",
+			Usage: "Send a text message from a Miami Number",
+			Flags: []cli.Flag{
+				cli.StringFlag{
+					Name:  "msg",
+					Value: "Yo what up",
+				},
+				cli.StringFlag{
+					Name: "num",
+					Value: "+1XXXYYYZZZZ",
+				},
+			},
+			Action: func(c *cli.Context) error {
+				msg := c.String("msg")
+				num := c.String("num")
+				txt.SendBasicSms(msg, num)
 				return nil
 			},
 		},	
