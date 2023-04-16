@@ -1,4 +1,4 @@
-opackage main
+package main
 
 import (
 	"fmt"
@@ -9,6 +9,7 @@ import (
 
 	"github.com/urfave/cli"
 	"github.com/gorbe2002/eyes-spies/dance"
+	"github.com/gorbe2002/eyes-spies/wttr"	
 	// "github.com/gorbe2002/eyes-spies/txt"
 )
 
@@ -57,6 +58,15 @@ func main() {
 				os := runtime.GOOS
 				arch := runtime.GOARCH
 				fmt.Printf("\tOS : {  %s  }\tARCH: {  %s  }\n", os, arch)
+				return nil
+			},
+		},	
+		{
+			Name:  "wttr",
+			Usage: "Show the weather of where you are currently",
+			Flags: myFlags,
+			Action: func(c *cli.Context) error {
+				wttr.ShowWTTR()
 				return nil
 			},
 		},	
