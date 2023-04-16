@@ -6,7 +6,27 @@ Monitoring tool but with Ice Spice :P
 - CLI tools are software programs that are designed to be used from the command line. They are usually lightweight and faster than their GUI counterparts, making them popular among developers and system administrators. CLI tools can be used to perform a wide range of tasks, such as text processing, file manipulation, system monitoring, network diagnostics, and more.
 
 ## :memo: Description
-In this command line hack, we created multiple CLI tools, which can range from showing you the weather forecast, to creating an ASCII video.
+In this command line hack, we created multiple CLI tools, which can range from showing you the weather forecast, to creating an ascii art video.
+
+## :open_book: Commands
+Weather:
+```sh
+./munch.o wttr
+```
+
+Dance:
+```sh
+./munch.o dance
+```
+Logo:
+```sh
+./munch.o logo
+```
+
+Text:
+```sh
+./munch.o text
+```
 
 ## :microscope: Technologies
 - Language(s): `go`, `html`, `css`, `python`, `rust`
@@ -16,6 +36,7 @@ In this command line hack, we created multiple CLI tools, which can range from s
 <!-- Twilio -->
 <details>
 	<summary>Twilio</summary>
+
 - Send SMS
 
 - Send SMS with Multimedia
@@ -32,6 +53,7 @@ In this command line hack, we created multiple CLI tools, which can range from s
 <!-- Github -->
 <details>
 	<summary>Github</summary>
+
 - Github Projects
 
 - Github Issues
