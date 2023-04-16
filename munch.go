@@ -7,7 +7,7 @@ import (
 	"os"
 
 	"github.com/urfave/cli"
-	_ "github.com/AOrps/eyes-spies/dance"
+	_ "github.com/gorbe2002/eyes-spies/dance"
 )
 
 func main() {
