@@ -106,10 +106,15 @@ In this project, we created multiple CLI tools, which can range from showing you
 </details>
 
 ## :blue_book: Technical Details
-- Need a `.env` file in `/root` with the following fields:
+- Need a `.env` file in root directory of this program with the following fields:
 ```txt
 # Enter values where `<>` is
 M_PHONE="<>"
 TWILIO_ACCOUNT_SID="<>"
 TWILIO_AUTH_TOKEN="<>"
 ```
+
+- Dance will not work out of the gate (unfortunately), however this can be ameliorate by doing the following:
+1. [Download munch.gif](https://drive.google.com/u/1/uc?id=1FFX4jj5EMxLRmfuZ6-LGJpG6RaSfMQz2&export=download)
+1. Put `munch.gif` in `vid` Directory
+1. Test it out! `./munch dance`
