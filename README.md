@@ -8,7 +8,7 @@ Monitoring tool but with Ice Spice :P
 - [:memo: Description](https://github.com/gorbe2002/eyes-spies#memo-description)
 - [:open_book: Commands](https://github.com/gorbe2002/eyes-spies#open_book-commands)
 - [:microscope: Technologies](https://github.com/gorbe2002/eyes-spies#microscope-technologies)
-- [:magnifying_glass_tilted_left: In-Depth](https://github.com/gorbe2002/eyes-spies#magnifying_glass_tilted_left-in-depth)
+- [:mag: In-Depth](https://github.com/gorbe2002/eyes-spies#magnifying_glass_tilted_left-in-depth)
 
 ## :thought_balloon: Introduction to CLI and CLI tools
 - CLI stands for Command Line Interface, which is a way of interacting with a computer program or operating system using text commands typed into a terminal or command prompt. A CLI allows users to execute commands, navigate directories, and perform various tasks using keyboard input, instead of using a graphical user interface (GUI) that relies on mouse clicks and icons.
@@ -18,59 +18,20 @@ Monitoring tool but with Ice Spice :P
 In this command line hack, we created multiple CLI tools, which can range from showing you the weather forecast, to creating an ascii art video.
 
 ## :open_book: Commands
-Help:
-- Shows a list of commands or help for one command
-```sh
-./munch.o help
-```
-
-Weather:
-- Shows the weather of where you are
-```sh
-./munch.o wttr
-```
-
-Dance:
-- Watch Ice Spice dance
-```sh
-./munch.o dance
-```
-
-Logo:
-- Display our logo in ascii art
-```sh
-./munch.o logo
-```
-
-Text:
-- Sends a text message from a Miami number
-```sh
-./munch.o text
-```
-
-Name Servers:
-- Show current name servers
-```sh
-./munch.o ns
-```
-
-IP:
-- Shows IP address
-```sh
-./munch.o ip
-```
-
-Operating System:
-- Checks Operating System & Architecture
-```sh
-./munch.o os
-```
+- [Help](https://github.com/gorbe2002/eyes-spies/wiki)
+- [Weather](https://github.com/gorbe2002/eyes-spies/wiki)
+- [Dance](https://github.com/gorbe2002/eyes-spies/wiki)
+- [Logo](https://github.com/gorbe2002/eyes-spies/wiki)
+- [Text](https://github.com/gorbe2002/eyes-spies/wiki)
+- [Name Servers](https://github.com/gorbe2002/eyes-spies/wiki)
+- [IP](https://github.com/gorbe2002/eyes-spies/wiki)
+- [Operating System](https://github.com/gorbe2002/eyes-spies/wiki)
 
 ## :microscope: Technologies
 - Language(s): `go`, `html`, `css`, `python`, `rust`
 - Technologies: `nginx`, `GCP`
 
-### :magnifying_glass_tilted_left: In-Depth
+### :mag: In-Depth
 <!-- Twilio -->
 <details>
 	<summary>Twilio</summary>
@@ -93,13 +54,26 @@ Operating System:
 <details>
 	<summary>Github</summary>
 
-- Github Projects
+- Projects
 
-- Github Issues
+- Issues
 
-- Github Code (Source Code)
+- Code (Source Code)
 
-- Github CODEOWNERS
+- CODEOWNERS
+
+- Branch Protections
+
+- Wiki
+
+- Dependency Graph (Exported SBOM to do some analysis)
+
+- CITATIONS
+
+- SECURITY Policy
+
+- Code of Conduct
+
 </details>
 
 <!-- GCP -->
